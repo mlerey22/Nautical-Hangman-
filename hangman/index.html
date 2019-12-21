@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script src="hangman.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Hangmast</h1>
+    </header>
+    <div class="row">
+        <div class="col-md">
+            <div class="button">
+                <button id="start" height="100px" width="100px">Start Game</button></div>
+            <div class="button">
+                <button id="restart" class="hide" height="100px" width="100px">Restart</button></div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4" class="card">
+            <div class="card-body" id="score">
+                <span class="wins"> Wins: 0 </span> <span class="loses"> Loses: 0</span>
+            </div>
+
+        </div>
+
+        <div class="col-md-4" class="card">
+            <div class="card-body" id="letter-display">
+                Guess The Word:
+            </div>
+        </div>
+
+        <div class="col-md-4" class="card">
+            <div class="card-body" id="guessesLeft">
+                Guesses Remaining: 6
+            </div>
+        </div>
+        <audio class="soundL" src="assets/splash.mp3"></audio>
+        <audio class="soundW" src="assets/bell.mp3"></audio>
+
+
+    </div>
+
+    <div class="row" class="card">
+        <div class="card-body" id="keyboard">
+
+        </div>
+    </div>
+
+    <div class="row  justify-content-center">
+
+        <div class="col-md-8">
+            <div class="card ">
+                <img class="mw-90" id="statusImage" src=" https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRlfMBjcIQ6qRlMKo_oQZL3vE_jiPLmrpvtIN5PFLev_HrFvniK" alt="max-width 90%" /> </div>
+        </div>
+
+
+    </div>
+
+
+
+
+    <!-- <div class="winningImage">
+        <img src="" alt="titanic">
+        <img src="" alt="Black pearl">
+        <img src="" alt="Enterprise"
+            black pearl address = https://www.google.com/url?sa=i&url=https%3A%2F%2Fpirates.fandom.com%2Fwiki%2FBlack_Pearl&psig=AOvVaw0EDA5vCehFzlT2W6fajrj5&ust=1577038201944000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKj1g6Crx-YCFQAAAAAdAAAAABAF
+
+            titanic address = https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cg_faces:center%2Cq_auto:good%2Cw_768/MTYwMTg5ODQyNDUyNDU2ODc1/titanic-conspiracy_rms-olympic-gettyimages-1055101284.jpg
+
+            enterprise address = https://i.pinimg.com/originals/c5/86/2f/c5862f1b7f63b06b9147632f2245b799.png
+    </div> -->
+
+    <!-- <div class="losingImage">
+        <img src="https://img.theculturetrip.com/768x432/wp-content/uploads/2017/03/titanic.jpeg" alt="Sunken Titanic" 
+
+        question mark image: https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRlfMBjcIQ6qRlMKo_oQZL3vE_jiPLmrpvtIN5PFLev_HrFvniK
+
+        millenium falcon image:https://www.google.com/url?sa=i&url=https%3A%2F%2Fgemr.com%2Fblog%2F10-valuable-millennium-falcon-collectibles%2F&psig=AOvVaw0I8lPVOX8Rp_6IkLZ8Luym&ust=1577046540793000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMinnKjKx-YCFQAAAAAdAAAAABAG
+    </div> -->
+
+
+
+</body>
+
+</html>
